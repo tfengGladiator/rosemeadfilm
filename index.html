@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosemead</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Microsoft YaHei', SimHei;
+            background-color: #f9f4ee;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin-bottom: 30px;
+            background-color: #000;
+        }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+
+        .text-content {
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+        }
+
+            .text-content p {
+                margin-bottom: 1em;
+            }
+
+        .ticket-link {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .image-container {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+                display: block;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .text-content {
+                padding: 15px;
+                font-size: 1rem;
+            }
+
+            .ticket-link {
+                font-size: 1.1rem;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .text-content {
+                padding: 10px;
+                font-size: 0.95rem;
+            }
+
+            .ticket-link {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .video-container {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- YouTube Video -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/IwQy6jV1QCM"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Text Content -->
+        <div class="text-content">
+            <p>
+                这里是大段文字内容的第一段。您可以在这里添加任何您想要展示的文字内容。
+                这些文字会自动适应不同的屏幕尺寸，确保在各种设备上都能有良好的阅读体验。
+            </p>
+            <p>
+                第二段文字内容。您可以继续添加更多的段落来丰富页面内容。
+                文字会根据屏幕大小自动调整，保持良好的可读性。
+            </p>
+            <p>
+                第三段文字内容。这里可以添加关于活动、演出或其他相关信息的详细描述。
+                根据您的需要添加更多内容。
+            </p>
+        </div>
+
+        <!-- Ticket Link -->
+        <div class="ticket-link">
+            购票链接：
+        </div>
+
+        <!-- Image -->
+        <div class="image-container">
+            <img src="assets/main.jpg" alt="Main Image">
+        </div>
+
+        <!-- Ticket Link Below Image -->
+        <div class="ticket-link">
+            购票链接：
+        </div>
+
+        <!-- Additional Documents Link -->
+        <div class="ticket-link">
+            <a href="https://drive.google.com/drive/folders/your-folder-id" target="_blank" style="color: #0066cc; text-decoration: none;">Additional Documents</a>
+        </div>
+    </div>
+</body>
+</html>
