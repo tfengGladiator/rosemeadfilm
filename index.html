@@ -48,7 +48,12 @@
             color: #333;
             text-align: justify;
         }
-
+            .text-content h2 {
+                margin-bottom: 1em;
+                color: #333;
+                text-align: center;
+                font-size: 1.5em;
+            }
             .text-content p {
                 margin-bottom: 1em;
             }
@@ -74,6 +79,56 @@
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
 
+        .logs-section {
+            width: 100%;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .logs-title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .logs-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .log-item {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+            .log-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            }
+
+            .log-item img {
+                width: 100%;
+                height: 150px;
+                object-fit: contain;
+                display: block;
+                background-color: white;
+                padding: 20px;
+            }
+
         /* Responsive design */
         @media (max-width: 768px) {
             .container {
@@ -87,6 +142,29 @@
 
             .ticket-link {
                 font-size: 1.1rem;
+                padding: 15px;
+            }
+
+            .logs-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 15px;
+                justify-content: center;
+            }
+
+            .logs-title {
+                font-size: 1.3rem;
+            }
+
+            .logs-grid {
+                gap: 20px;
+            }
+
+            .log-item {
+                width: 180px;
+            }
+
+            .log-item img {
+                height: 130px;
                 padding: 15px;
             }
         }
@@ -109,6 +187,28 @@
             .video-container {
                 margin-bottom: 20px;
             }
+
+            .logs-grid {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .logs-title {
+                font-size: 1.2rem;
+            }
+
+            .logs-grid {
+                gap: 15px;
+            }
+
+            .log-item {
+                width: 150px;
+            }
+
+            .log-item img {
+                height: 110px;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -124,23 +224,29 @@
 
         <!-- Text Content -->
         <div class="text-content">
+            <h2>ROSEMEAD STARRING LUCY LIU OPENS NATIONWIDE ON JANUARY 9, 2026</h2>
             <p>
-                这里是大段文字内容的第一段。您可以在这里添加任何您想要展示的文字内容。
-                这些文字会自动适应不同的屏幕尺寸，确保在各种设备上都能有良好的阅读体验。
+                Inspired by the harrowing true story, Lucy Liu transforms in a riveting, career-redefining performance as an ailing woman who takes drastic measures to protect her troubled teenage son (Lawrence Shou). Set against the simmering tensions of a Chinese American community in the San Gabriel Valley, Rosemead is a gripping portrait of a family pushed to the edge.
             </p>
             <p>
-                第二段文字内容。您可以继续添加更多的段落来丰富页面内容。
-                文字会根据屏幕大小自动调整，保持良好的可读性。
+                Rosemead premiered at the Tribeca Festival, won the Locarno Film Festival's Prix du Public UBS audience award and Bentonville Film Festival's Best Narrative Feature award, and was nominated for Taipei Golden Horse Award for Best Adapted Screenplay.
             </p>
             <p>
-                第三段文字内容。这里可以添加关于活动、演出或其他相关信息的详细描述。
-                根据您的需要添加更多内容。
+                The film opens on January 9 in theaters across the US and limited areas in Canada.
             </p>
         </div>
 
         <!-- Ticket Link -->
         <div class="ticket-link">
-            购票链接：
+            <a href="https://www.fandango.com/rosemead-2025-242162/movie-overview" target="_blank">Click To Purchase Tickets</a>
+        </div>
+
+        <!-- YouTube Video -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Hmh1oMYGWaw"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
         </div>
 
         <!-- Image -->
@@ -150,12 +256,28 @@
 
         <!-- Ticket Link Below Image -->
         <div class="ticket-link">
-            购票链接：
+            <a href="https://www.fandango.com/rosemead-2025-242162/movie-overview" target="_blank">Click To Purchase Tickets</a>
         </div>
 
         <!-- Additional Documents Link -->
         <div class="ticket-link">
-            <a href="https://drive.google.com/drive/folders/your-folder-id" target="_blank" style="color: #0066cc; text-decoration: none;">Additional Documents</a>
+            <a href="https://drive.google.com/drive/u/0/folders/1oKYWGwZdERDPMC8i1JBsDw8MiNug4ijJ" target="_blank" style="color: #0066cc; text-decoration: none;">Additional Documents</a>
+        </div>
+
+        <!-- Logos Section -->
+        <div class="logs-section">
+            <div class="logs-title">Partners</div>
+            <div class="logs-grid">
+                <div class="log-item">
+                    <img src="assets/Logos/01-china-institute-logo-vector - Copy.png" alt="China Institute">
+                </div>
+                <div class="log-item">
+                    <img src="assets/Logos/02-china-institute-logo-vector - Copy (2).png" alt="China Institute">
+                </div>
+                <div class="log-item">
+                    <img src="assets/Logos/03-china-institute-logo-vector.png" alt="China Institute">
+                </div>
+            </div>
         </div>
     </div>
 </body>
