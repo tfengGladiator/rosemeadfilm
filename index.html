@@ -48,12 +48,14 @@
             color: #333;
             text-align: justify;
         }
+
             .text-content h2 {
                 margin-bottom: 1em;
                 color: #333;
                 text-align: center;
                 font-size: 1.5em;
             }
+
             .text-content p {
                 margin-bottom: 1em;
             }
@@ -66,6 +68,53 @@
             font-weight: bold;
             color: #333;
         }
+
+            .ticket-link a {
+                display: inline-block;
+                padding: 15px 40px;
+                background: linear-gradient(135deg, #d4a574 0%, #b8835a 100%);
+                color: white;
+                text-decoration: none;
+                border-radius: 8px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+
+                .ticket-link a:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+                    background: linear-gradient(135deg, #c9955f 0%, #a67548 100%);
+                }
+
+                .ticket-link a:active {
+                    transform: translateY(-1px);
+                }
+
+                .ticket-link a.plain-link {
+                    display: inline;
+                    padding: 0;
+                    background: none;
+                    color: #b8835a;
+                    text-decoration: underline;
+                    border-radius: 0;
+                    font-size: 1.1rem;
+                    font-weight: normal;
+                    transition: color 0.3s ease;
+                    box-shadow: none;
+                }
+
+                    .ticket-link a.plain-link:hover {
+                        transform: none;
+                        box-shadow: none;
+                        background: none;
+                        color: #8b6340;
+                    }
+
+                    .ticket-link a.plain-link:active {
+                        transform: none;
+                    }
 
         .image-container {
             width: 100%;
@@ -163,10 +212,10 @@
                 width: 180px;
             }
 
-            .log-item img {
-                height: 130px;
-                padding: 15px;
-            }
+                .log-item img {
+                    height: 130px;
+                    padding: 15px;
+                }
         }
 
         @media (max-width: 480px) {
@@ -205,10 +254,10 @@
                 width: 150px;
             }
 
-            .log-item img {
-                height: 110px;
-                padding: 10px;
-            }
+                .log-item img {
+                    height: 110px;
+                    padding: 10px;
+                }
         }
     </style>
 </head>
@@ -238,7 +287,7 @@
 
         <!-- Ticket Link -->
         <div class="ticket-link">
-            <a href="https://www.fandango.com/rosemead-2025-242162/movie-overview" target="_blank">Click To Purchase Tickets</a>
+            <a href="https://www.fandango.com/rosemead-2025-242162/movie-overview" target="_blank">Purchase Tickets</a>
         </div>
 
         <!-- YouTube Video -->
@@ -256,12 +305,12 @@
 
         <!-- Ticket Link Below Image -->
         <div class="ticket-link">
-            <a href="https://www.fandango.com/rosemead-2025-242162/movie-overview" target="_blank">Click To Purchase Tickets</a>
+            <a href="https://www.fandango.com/rosemead-2025-242162/movie-overview" target="_blank">Purchase Tickets</a>
         </div>
 
         <!-- Additional Documents Link -->
         <div class="ticket-link">
-            <a href="https://drive.google.com/drive/u/0/folders/1oKYWGwZdERDPMC8i1JBsDw8MiNug4ijJ" target="_blank" style="color: #0066cc; text-decoration: none;">Additional Documents</a>
+            <a href="https://drive.google.com/drive/u/0/folders/1oKYWGwZdERDPMC8i1JBsDw8MiNug4ijJ" target="_blank" class="plain-link">Additional Documents</a>
         </div>
 
         <!-- Logos Section -->
@@ -282,3 +331,5 @@
     </div>
 </body>
 </html>
+
+
